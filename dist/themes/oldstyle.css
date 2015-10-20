@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:600);
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Crimson Text', serif; }
+
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: justify; }
+
+h1 {
+  text-align: center; }
+
+pre {
+  border: 1px solid #333; }
+
+th, td {
+  border-bottom: 1px solid #333; }
+
+thead {
+  border-bottom: 3px double #333; }
+
+blockquote {
+  border-left: 1px dashed #333;
+  margin-left: 1.5rem;
+  padding-left: 1rem;
+  font-variant: small-caps; }
+  blockquote p:first-letter {
+    font-weight: bold; }

@@ -1,0 +1,39 @@
+@import "../variables.scss";
+
+@import url(https://fonts.googleapis.com/css?family=Crimson+Text:600);
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Crimson Text', serif;
+}
+
+body {
+	font-family: $font-family-serif;
+	text-align: justify;
+}
+
+h1 {
+	text-align: center;
+}
+
+pre {
+	border: 1px solid $table-color;
+}
+
+th, td {
+	border-bottom: 1px solid $table-color;
+}
+
+thead {
+	border-bottom: 3px double $table-color;
+}
+
+blockquote {
+	border-left: 1px dashed $table-color;
+	margin-left: $spacing;
+	padding-left: 1rem;
+	font-variant: small-caps;
+
+	& p:first-letter {
+		font-weight: bold;
+	}
+}

@@ -1,0 +1,36 @@
+// Base
+$line-height: 1.5;
+$spacing: 1.5rem;
+
+// Font family
+// Taken from bootstrap
+$font-family-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif: Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;
+
+$base-font-family: $font-family-sans-serif;
+$headers-font-family: $font-family-sans-serif;
+
+// Colors
+$body-color: #333 !default;
+$headings-color: #333 !default;
+$links-color: #333 !default;
+$table-color: #333 !default;
+$blockquote-color: #bbb !default;
+$hr-color: #bbb !default;
+$code-color: #bbb !default;
+
+// Font size
+$base-font-size: 16px !default;
+$font-size-h1: 2.5rem !default;
+$font-size-h2: 2rem !default;
+$font-size-h3: 1.75rem !default;
+$font-size-h4: 1.5rem !default;
+$font-size-h5: 1.25rem !default;
+$font-size-h6: 1rem !default;
+
+// Page
+$page-padding-left: 1.8cm;
+$page-padding-right: 1.8cm;
+$page-padding-top: 2.54cm;
+$page-padding-bottom: 2.54cm;

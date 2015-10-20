@@ -1,0 +1,192 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+// Remove shadow
+*, *::before, *::after {
+	text-shadow: none !important;
+	box-shadow: none !important;
+}
+
+html {
+	font-size: $base-font-size;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: $line-height;
+	font-size: 1rem;
+	color: $body-color;
+	font-family: $base-font-family;
+	// max-width: 21cm;
+	background: none;
+	margin: 0 auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+}
+
+p, blockquote, table, ul, ol, dl {
+	margin-top: 0;
+	margin-bottom: $spacing;
+}
+
+
+p, ul, ol {
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+/**
+ * Headers
+ */
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;
+	margin-top: 0;
+	margin-bottom: $spacing/2;
+	color: $links-color;
+	font-family: $headers-font-family;
+}
+
+h1 {
+	font-size: $font-size-h1;
+}
+
+h2 {
+	font-size: $font-size-h2;
+}
+
+h3 {
+	font-size: $font-size-h3;
+}
+
+h4 {
+	font-size: $font-size-h4;
+}
+
+h5 {
+	font-size: $font-size-h5;
+}
+
+h6 {
+	font-size: $font-size-h6;
+}
+
+/**
+ * Code, Pre
+ */
+code, pre, kbd {
+	font-family: $font-family-monospace;
+	font-size: 85%;
+	border: 1px solid $code-color;
+}
+
+code, kbd {
+	padding: 3px 3px;
+}
+
+pre {
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	padding: 10px 12px;
+	margin-bottom: $spacing;
+
+	& code, & kbd {
+		border: 0;
+	}
+}
+
+/**
+ * Table
+ */
+table {
+	border-collapse: collapse;
+}
+
+thead {
+	display: table-header-group;
+}
+
+table, th, td {
+	border-bottom: 1px solid $table-color;
+}
+
+td, th {
+	padding: $base-font-size/2 $base-font-size;
+}
+
+/**
+ * Links
+ */
+a {
+	&, &:visited {
+		color: $links-color;
+		text-decoration: underline;
+		word-wrap: break-word;
+	}
+
+	// Show link source
+	&[href^="http://"]:after, &[href^="https://"]:after, &[href^="ftp://"]:after {
+		content: " (" attr(href) ")";
+		font-size: 80%;
+	}
+}
+
+blockquote {
+	border: 0;
+	border-left: 5px solid $blockquote-color;
+	margin-left: 1px;
+	padding: 12px $spacing;
+
+	&:first-child {
+		margin-top: 0;
+	}
+
+	& p:last-child,
+	& ul:last-child,
+	& ol:last-child {
+		margin-bottom: 0;
+	}
+
+	& footer {
+		display: block;
+		font-size: 80%;
+	}
+}
+
+img {
+	display: block;
+	border: 0;
+	max-width: 100% !important;
+	vertical-align: middle;
+}
+
+hr {
+	border: 0;
+	border-bottom: 2px solid $hr-color;
+	height: 0;
+	padding: 0;
+	margin: $spacing*1.5 0;
+}
+
+abbr[title], acronym[title] {
+	border: 0;
+	text-decoration: 0;
+
+	&::after {
+		content: " (" attr(title) ")";
+	}
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0;
+	margin-bottom: $spacing / 2;
+}

@@ -1,0 +1,47 @@
+h1, article {
+  page-break-before: always; }
+
+body {
+  padding: 0;
+  text-align: justify;
+  counter-reset: h1num h2num h3num h4num figurenum; }
+
+h1:before {
+  counter-increment: h1num;
+  content: counter(h1num) ". "; }
+
+h2:before {
+  counter-increment: h2num;
+  content: counter(h1num) "." counter(h2num) ". "; }
+
+h3:before {
+  counter-increment: h3num;
+  content: counter(h1num) "." counter(h2num) "." counter(h3num) ". "; }
+
+h4:before {
+  counter-increment: h4num;
+  content: counter(h1num) "." counter(h2num) "." counter(h3num) "." counter(h4num) ". "; }
+
+figcaption:before {
+  counter-increment: figurenum;
+  content: counter(h1num) "-" counter(figurenum) ". "; }
+
+figcaption {
+  max-width: 100%;
+  text-align: center;
+  margin: 0 auto; }
+
+img, table {
+  margin: 0 auto; }
+
+@page {
+  margin-top: 2.5cm;
+  margin-bottom: 2.5cm; }
+
+@page :left {
+  margin-left: 4cm;
+  margin-right: 3cm; }
+
+@page :right {
+  margin-left: 3cm;
+  margin-right: 4cm; }

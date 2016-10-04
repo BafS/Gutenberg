@@ -1,6 +1,6 @@
 {
   "name": "gutenberg",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Print your web pages with style",
   "main": "index.js",
   "scripts": {
@@ -14,8 +14,8 @@
   "author": "Fabien Sa",
   "license": "MIT",
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-minify-css": "^1.2.1",
-    "gulp-sass": "^2.0.4"
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-sass": "^2.3.2"
   }
 }

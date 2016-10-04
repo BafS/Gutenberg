@@ -1,3 +1,4 @@
 node_modules
 __*
 .DS_Store
+dist/min

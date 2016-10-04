@@ -1,6 +1,6 @@
 var gulp       = require('gulp'),
 	sass       = require('gulp-sass'),
-	minifyCss = require('gulp-minify-css');
+	cleanCSS   = require('gulp-clean-css');
 	// sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('build-css', function() {
@@ -11,7 +11,7 @@ gulp.task('build-css', function() {
 
 gulp.task('minify-css', function() {
 	return gulp.src('dist/**/*.css')
-		.pipe(minifyCss({compatibility: 'ie8'}))
+		.pipe(cleanCSS({compatibility: 'ie8'}))
 		.pipe(gulp.dest('dist/min'));
 });
 

@@ -11,22 +11,13 @@ Gutenberg.css is the base stylesheet but there is themes available in the `theme
 Example with Gutenberg and "old style" theme :
 
 ```HTML
-<link rel="stylesheet" href="dist/gutenberg.css" media="print" charset="utf-8">
-<link rel="stylesheet" href="dist/themes/oldstyle.css" media="print" charset="utf-8">
+<link rel="stylesheet" href="dist/gutenberg.css" media="print">
+<link rel="stylesheet" href="dist/themes/oldstyle.css" media="print">
 ```
 
 ![comparison](https://i.imgur.com/tL5cHhn.png)
 
 > Comparison between standard print (left) and Gutenberg (middle, Modern style and right, Old style)
-
-### Force to print background
-
-To force backgrounds to be printed (can be useful when you "print" a pdf), add this CSS (compatible with Safari and Chrome) :
-
-```CSS
--webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-```
 
 ### Hide elements
 
@@ -41,6 +32,15 @@ Example:
 ```HTML
 <!-- The title will be on a new page -->
 <h1 class="page-break">My title</h1>
+```
+
+### Force to print background
+
+To force backgrounds to be printed (can be useful when you "print" a pdf), add this CSS (compatible with Safari and Chrome) :
+
+```CSS
+-webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
 ```
 
 ## Dev

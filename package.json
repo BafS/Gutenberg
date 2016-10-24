@@ -1,6 +1,6 @@
 {
   "name": "gutenberg",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Print your web pages with style",
   "main": "index.js",
   "scripts": {
@@ -13,9 +13,20 @@
   ],
   "author": "Fabien Sa",
   "license": "MIT",
+  "repository": {
+    "url": "git+https://github.com/BafS/Gutenberg.git",
+    "type": "git"
+  },
+  "bugs": {
+    "url": "https://github.com/BafS/Gutenberg/issues"
+  },
+  "homepage": "https://github.com/BafS/Gutenberg#readme",
+  "dependencies": {
+    "normalize-scss": "^6.0.0"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.13",
+    "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2"
   }
 }

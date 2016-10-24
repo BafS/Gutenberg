@@ -1,5 +1,5 @@
 /**
- * Gutenberg
+ * Gutenberg 0.2.0
  *
  * MIT Fabien Sa
  */
@@ -8,7 +8,7 @@
 @import "variables";
 
 // Normalize
-@import "normalize";
+@import "../node_modules/normalize-scss/sass/normalize/_import-now";
 
 @import "pagination";
 @import "page";

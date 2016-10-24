@@ -1,7 +1,6 @@
 var gulp       = require('gulp'),
-	sass       = require('gulp-sass'),
-	cleanCSS   = require('gulp-clean-css');
-	// sourcemaps = require('gulp-sourcemaps');
+    rename     = require('gulp-rename'),
+    sass       = require('gulp-sass');
 
 gulp.task('build-css', function() {
 	return gulp.src('scss/**/*.scss')
@@ -10,9 +9,14 @@ gulp.task('build-css', function() {
 });
 
 gulp.task('minify-css', function() {
-	return gulp.src('dist/**/*.css')
-		.pipe(cleanCSS({compatibility: 'ie8'}))
-		.pipe(gulp.dest('dist/min'));
+	return gulp.src('scss/**/*.scss')
+		.pipe(sass({
+			outputStyle: 'compressed'
+		}).on('error', sass.logError))
+		.pipe(rename({
+            suffix: '.min'
+        }))
+		.pipe(gulp.dest('dist'));
 });
 
 gulp.task('watch', function() {

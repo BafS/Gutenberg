@@ -21,7 +21,7 @@ Example with Gutenberg and "old style" theme :
 
 ## CDN
 
-You can also unpkg as a *CDN*.
+You can also use the unpkg service as a *CDN*.
 
 ```HTML
 <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.2.0/dist/gutenberg.min.css" media="print">

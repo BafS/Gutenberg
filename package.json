@@ -1,8 +1,9 @@
 {
-  "name": "gutenberg",
+  "name": "gutenberg-css",
   "version": "0.2.0",
   "description": "Print your web pages with style",
-  "main": "index.js",
+  "main": "scss/gutenberg.scss",
+  "browser": "dist/gutenberg.min.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -19,6 +19,18 @@ Example with Gutenberg and "old style" theme :
 
 > Comparison between standard print (left) and Gutenberg (middle, Modern style and right, Old style)
 
+## CDN
+
+You can also unpkg as a *CDN*.
+
+```HTML
+<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.2.0/dist/gutenberg.min.css" media="print">
+<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.2.0/dist/themes/oldstyle.min.css" media="print">
+```
+
+
+# What does the framework do ?
+
 ### Hide elements
 
 To hide elements to be printed you can simply add the class `no-print`.

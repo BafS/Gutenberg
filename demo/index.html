@@ -5,21 +5,62 @@
 	<style>
 body {
 	font-family: sans-serif;
-	padding: 1em 3em;
+	padding: 1.2em 3em;
 	color: #333;
 }
 a { color: #28d }
 li { margin: 4px 0 }
+code { background: #f8f8f8 }
 	</style>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
 </head>
 <body>
-	<h2>Gutenberg demo</h2>
+	<h1>Gutenberg</h1>
 
+	<h2>Demonstration</h2>
 	<ul>
 		<li><a href="modern.html">Modern style</a></li>
 		<li><a href="oldstyle.html">Old style</a></li>
 	</ul>
 
 	<p>Print (or use the print preview) to see the result with Gutenberg.</p>
+
+	<h2>Utils</h2>
+
+	<h4>Hide elements</h4>
+
+	To hide elements to be printed you can simply add the class <code>no-print</code>.
+
+	<h4>Force break page</h4>
+
+	Gutenberg provide to way break page, the class <code>page-break</code> will for to break before and <code>page-break-after</code> to break after.
+
+	Example:
+
+	<pre><code class="html">
+&lt;!-- The title will be on a new page --&gt;
+&lt;h1 class="page-break"&gt;My title&lt;/h1&gt;
+
+&lt;p class="page-break-after"&gt;I will break after this paragraph&lt;/p&gt;
+&lt;!-- Break here, the next paragraph will be on a new page --&gt;
+&lt;p&gt;I am on a new page&lt;/p&gt;
+	</code></pre>
+
+	<h4>Not reformat links or acronym</h4>
+
+	If you do not want to reformat the links, acronym or abbreviation to show the full url or title, you
+	can use the class <code>no-reformat</code>.
+
+	<h4>Force to print background</h4>
+
+	To force backgrounds to be printed (can be useful when you "print" a pdf), add this CSS (compatible with Safari and Chrome) :
+
+	<pre><code class="css">
+-webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+	</code></pre>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

@@ -1,18 +1,17 @@
-
 ![Gutenberg](http://i.imgur.com/NlGJI3v.png)
 
 > Modern framework to print correctly
 
 # How to use
 
-Simply include the right stylesheet(s) in your html.
+Simply include the right stylesheet(s) in your html an load it only for a printer.
 Gutenberg.css is the base stylesheet but there is themes available in the `themes` folder.
 
 Example with Gutenberg and "old style" theme :
 
 ```HTML
 <link rel="stylesheet" href="dist/gutenberg.css" media="print">
-<link rel="stylesheet" href="dist/themes/oldstyle.css" media="print">
+<link rel="stylesheet" href="dist/themes/oldstyle.css" media="print"> <!-- optional -->
 ```
 
 ![comparison](https://i.imgur.com/tL5cHhn.png)
@@ -44,6 +43,10 @@ Example:
 ```HTML
 <!-- The title will be on a new page -->
 <h1 class="page-break">My title</h1>
+
+<p class="page-break-after">I will break after this paragraph</p>
+<!-- Break here, the next paragraph will be on a new page -->
+<p>I am on a new page</p>
 ```
 
 ### Force to print background

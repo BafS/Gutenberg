@@ -1,4 +1,4 @@
-table, blockquote, pre, code, figure, li, hr, ul, ol, a {
+table, blockquote, pre, code, figure, li, hr, ul, ol, a, tr {
 	page-break-inside: avoid;
 }
 
@@ -7,8 +7,6 @@ h2, h3, h4, p, a {
 	orphans: 3; // minimum number of lines that must be left at the bottom of a page
 	widows: 3; // minimum number of lines that must be left at the top of a page
 }
-
-
 
 // Avoid breaking inside or just after titles
 h1, h2, h3, h4, h5, h6 {
@@ -26,4 +24,9 @@ img {
 	page-break-before: auto;
 	page-break-after: auto;
 	page-break-inside: avoid;
+}
+
+pre {
+	white-space: pre-wrap !important;
+	word-wrap: break-word;
 }

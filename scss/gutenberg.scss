@@ -1,5 +1,5 @@
 /**
- * Gutenberg 0.2.0
+ * Gutenberg 0.3.0-beta
  *
  * MIT Fabien Sa
  */
@@ -10,7 +10,8 @@
 // Normalize
 @import "../node_modules/normalize-scss/sass/normalize/_import-now";
 
+@import "print-reset";
 @import "pagination";
 @import "page";
-@import "base";
+@import "reformat";
 @import "utilities";

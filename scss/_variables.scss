@@ -12,13 +12,16 @@ $base-font-family: $font-family-sans-serif;
 $headers-font-family: $font-family-sans-serif;
 
 // Colors
-$body-color: #333 !default;
-$headings-color: #333 !default;
-$links-color: #333 !default;
-$table-color: #333 !default;
+// Note: Black prints faster (http://www.sanbeiji.com/archives/953)
+// (thanks to html5 boilerplate)
+$body-color: #000 !default;
+$headings-color: #000 !default;
+$links-color: #000 !default;
+$table-color: #000 !default;
 $blockquote-color: #bbb !default;
 $hr-color: #bbb !default;
 $code-color: #bbb !default;
+$background-color: #fff !default;
 
 // Font size
 $base-font-size: 16px !default;

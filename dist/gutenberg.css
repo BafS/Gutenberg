@@ -1,5 +1,5 @@
 /**
- * Gutenberg 0.2.0
+ * Gutenberg 0.3.0-beta
  *
  * MIT Fabien Sa
  */
@@ -420,39 +420,28 @@ template {
 [hidden] {
   display: none; }
 
-table, blockquote, pre, code, figure, li, hr, ul, ol, a {
-  page-break-inside: avoid; }
-
-h2, h3, h4, p, a {
-  orphans: 3;
-  widows: 3; }
-
-h1, h2, h3, h4, h5, h6 {
-  page-break-after: avoid;
-  page-break-inside: avoid; }
-
-h1 + p, h2 + p, h3 + p {
-  page-break-before: avoid; }
-
-img {
-  page-break-before: auto;
-  page-break-after: auto;
-  page-break-inside: avoid; }
-
-body {
-  padding-left: 1.8cm;
-  padding-right: 1.8cm;
-  padding-top: 2.54cm;
-  padding-bottom: 2.54cm; }
-
+/**
+ * Global
+ */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-*, *::before, *::after {
-  text-shadow: none !important;
-  box-shadow: none !important; }
+*,
+*:before,
+*:after,
+p:first-letter,
+div:first-letter,
+blockquote:first-letter,
+li:first-letter,
+p:first-line,
+div:first-line,
+blockquote:first-line,
+li:first-line {
+  background: transparent !important;
+  box-shadow: none !important;
+  text-shadow: none !important; }
 
 html {
   font-size: 16px;
@@ -460,11 +449,11 @@ html {
   padding: 0; }
 
 body {
-  line-height: 1.5;
+  color: #000 !important;
+  background: #fff !important;
   font-size: 1rem;
-  color: #333;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: none;
+  line-height: 1.5;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -484,7 +473,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-top: 0;
   margin-bottom: 0.75rem;
-  color: #333;
+  color: #000;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 h1 {
@@ -506,23 +495,12 @@ h6 {
   font-size: 1rem; }
 
 /**
- * Code, Pre
+ * Links
  */
-code, pre, kbd {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
-  font-size: 85%;
-  border: 1px solid #bbb; }
-
-code, kbd {
-  padding: 3px 3px; }
-
-pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  padding: 10px 12px;
-  margin-bottom: 1.5rem; }
-  pre code, pre kbd {
-    border: 0; }
+a, a:visited {
+  color: #000;
+  text-decoration: underline;
+  word-wrap: break-word; }
 
 /**
  * Table
@@ -534,23 +512,31 @@ thead {
   display: table-header-group; }
 
 table, th, td {
-  border-bottom: 1px solid #333; }
+  border-bottom: 1px solid #000; }
 
 td, th {
   padding: 8px 16px; }
 
 /**
- * Links
+ * Code, Pre
  */
-a, a:visited {
-  color: #333;
-  text-decoration: underline;
-  word-wrap: break-word; }
+code, pre, kbd {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-size: 85%;
+  border: 1px solid #bbb; }
 
-a[href^="http://"]:after, a[href^="https://"]:after, a[href^="ftp://"]:after {
-  content: " (" attr(href) ")";
-  font-size: 80%; }
+code, kbd {
+  padding: 3px 3px; }
 
+pre {
+  padding: 10px 12px;
+  margin-bottom: 1.5rem; }
+  pre code, pre kbd {
+    border: 0; }
+
+/**
+ * Others
+ */
 blockquote {
   border: 0;
   border-left: 5px solid #bbb;
@@ -579,18 +565,52 @@ hr {
   padding: 0;
   margin: 2.25rem 0; }
 
-abbr[title], acronym[title] {
-  border: 0;
-  text-decoration: 0; }
-  abbr[title]::after, acronym[title]::after {
-    content: " (" attr(title) ")"; }
-
 dt {
   font-weight: bold; }
 
 dd {
   margin: 0;
   margin-bottom: 0.75rem; }
+
+abbr[title], acronym[title] {
+  border: 0;
+  text-decoration: 0; }
+
+table, blockquote, pre, code, figure, li, hr, ul, ol, a, tr {
+  page-break-inside: avoid; }
+
+h2, h3, h4, p, a {
+  orphans: 3;
+  widows: 3; }
+
+h1, h2, h3, h4, h5, h6 {
+  page-break-after: avoid;
+  page-break-inside: avoid; }
+
+h1 + p, h2 + p, h3 + p {
+  page-break-before: avoid; }
+
+img {
+  page-break-before: auto;
+  page-break-after: auto;
+  page-break-inside: avoid; }
+
+pre {
+  white-space: pre-wrap !important;
+  word-wrap: break-word; }
+
+body {
+  padding-left: 1.8cm;
+  padding-right: 1.8cm;
+  padding-top: 2.54cm;
+  padding-bottom: 2.54cm; }
+
+a[href^="http://"]:after, [href^="https://"]:after, [href^="ftp://"]:after {
+  content: " (" attr(href) ")";
+  font-size: 80%; }
+
+abbr[title]:after, acronym[title]:after {
+  content: " (" attr(title) ")"; }
 
 .page-break {
   page-break-before: always; }
@@ -600,3 +620,9 @@ dd {
 
 .no-print {
   display: none; }
+
+a.no-reformat:after {
+  content: ""; }
+
+abbr[title].no-reformat:after, acronym[title].no-reformat:after {
+  content: ""; }

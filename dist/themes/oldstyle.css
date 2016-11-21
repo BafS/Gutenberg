@@ -10,16 +10,16 @@ h1 {
   text-align: center; }
 
 pre {
-  border: 1px solid #333; }
+  border: 1px solid #000; }
 
 th, td {
-  border-bottom: 1px solid #333; }
+  border-bottom: 1px solid #000; }
 
 thead {
-  border-bottom: 3px double #333; }
+  border-bottom: 3px double #000; }
 
 blockquote {
-  border-left: 1px dashed #333;
+  border-left: 1px dashed #000;
   margin-left: 1.5rem;
   padding-left: 1rem;
   font-variant: small-caps; }

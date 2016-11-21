@@ -49,6 +49,11 @@ Example:
 <p>I am on a new page</p>
 ```
 
+### Not reformat links or acronym
+
+If you do not want to reformat the links, acronym or abbreviation to show the full url or title, you
+can use the class `no-reformat`.
+
 ### Force to print background
 
 To force backgrounds to be printed (can be useful when you "print" a pdf), add this CSS (compatible with Safari and Chrome) :

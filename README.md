@@ -2,6 +2,8 @@
 
 > Modern framework to print correctly
 
+[![npm (scoped)](https://img.shields.io/npm/v/gutenberg-css.svg?style=flat-square)](https://www.npmjs.com/package/gutenberg-css)
+
 # How to use
 
 Simply include the right stylesheet(s) in your html an load it only for a printer.
@@ -23,8 +25,8 @@ Example with Gutenberg and "old style" theme :
 You can also use the unpkg service as a *CDN*.
 
 ```HTML
-<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.2.0/dist/gutenberg.min.css" media="print">
-<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.2.0/dist/themes/oldstyle.min.css" media="print">
+<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.3.0" media="print">
+<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.3.0/dist/themes/oldstyle.min.css" media="print">
 ```
 
 

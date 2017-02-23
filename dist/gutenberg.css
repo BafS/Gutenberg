@@ -605,7 +605,7 @@ body {
   padding-top: 2.54cm;
   padding-bottom: 2.54cm; }
 
-a [href^="http://"]:after, a [href^="https://"]:after, a [href^="ftp://"]:after {
+a[href^="http://"]:after, a[href^="https://"]:after, a[href^="ftp://"]:after {
   content: " (" attr(href) ")";
   font-size: 80%; }
 

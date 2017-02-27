@@ -25,8 +25,8 @@ Example with Gutenberg and "old style" theme :
 You can also use the unpkg service as a *CDN*.
 
 ```HTML
-<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.3.0" media="print">
-<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.3.0/dist/themes/oldstyle.min.css" media="print">
+<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.3" media="print">
+<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.3/dist/themes/oldstyle.min.css" media="print">
 ```
 
 

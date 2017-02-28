@@ -5,6 +5,7 @@
   "main": "scss/gutenberg.scss",
   "browser": "dist/gutenberg.min.css",
   "scripts": {
+    "build": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -23,11 +24,11 @@
   },
   "homepage": "https://github.com/BafS/Gutenberg#readme",
   "dependencies": {
-    "normalize-scss": "^6.0.0"
+    "normalize-scss": "~6.0.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.2"
+    "gulp-sass": "^3.1.0"
   }
 }

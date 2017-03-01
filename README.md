@@ -1,8 +1,14 @@
-![Gutenberg](http://i.imgur.com/NlGJI3v.png)
+<p align="center">
+	<img width="450" alt="Gutenberg" src="http://i.imgur.com/NlGJI3v.png">
+</p>
 
 > Modern framework to print correctly
 
 [![npm (scoped)](https://img.shields.io/npm/v/gutenberg-css.svg?style=flat-square)](https://www.npmjs.com/package/gutenberg-css)
+[![npm](https://img.shields.io/npm/l/gutenberg-css.svg?style=flat-square)]()
+[![npm](https://img.shields.io/npm/dm/gutenberg-css.svg?style=flat-square)]()
+[![Code Climate](https://img.shields.io/codeclimate/github/BafS/Gutenberg.svg?style=flat-square)](https://lima.codeclimate.com/github/BafS/Gutenberg)
+[![Beerpay](https://beerpay.io/BafS/Gutenberg/badge.svg)](https://beerpay.io/BafS/Gutenberg)
 
 # How to use
 
@@ -19,6 +25,14 @@ Example with Gutenberg and "old style" theme :
 ![comparison](https://i.imgur.com/tL5cHhn.png)
 
 > Comparison between standard print (left) and Gutenberg (middle, Modern style and right, Old style)
+
+## npm
+
+Gutenberg is available on npm
+
+```
+npm install gutenberg-css
+```
 
 ## CDN
 

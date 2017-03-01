@@ -4,3 +4,5 @@ engines:
 ratings:
   paths:
   - "scss/**.scss"
+exclude_paths:
+  - "dist/"

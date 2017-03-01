@@ -10,13 +10,17 @@
 	display: none;
 }
 
-a.no-reformat:after {
-	content: '';
-}
-
-abbr[title],
-acronym[title] {
+a {
 	&.no-reformat:after {
 		content: '';
+	}
+}
+
+abbr,
+acronym {
+	&[title] {
+		&.no-reformat:after {
+			content: '';
+		}
 	}
 }

@@ -212,8 +212,10 @@ dd {
 	margin-bottom: $spacing / 2;
 }
 
-abbr[title],
-acronym[title] {
-	border: 0;
-	text-decoration: 0;
+abbr,
+acronym {
+	&[title] {
+		border: 0;
+		text-decoration: 0;
+	}
 }

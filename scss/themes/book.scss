@@ -17,13 +17,13 @@ h1:before {
 }
 
 h2:before {
-	counter-increment: h2num;
 	content: counter(h1num) '.'counter(h2num) '. ';
+	counter-increment: h2num;
 }
 
 h3:before {
-	counter-increment: h3num;
 	content: counter(h1num) '.' counter(h2num) '.'counter(h3num) '. ';
+	counter-increment: h3num;
 }
 
 h4:before {
@@ -37,12 +37,13 @@ figcaption:before {
 }
 
 figcaption {
+	margin: 0 auto;
 	max-width: 100%;
 	text-align: center;
-	margin: 0 auto;
 }
 
-img, table {
+img,
+table {
 	margin: 0 auto;
 }
 

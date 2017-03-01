@@ -1,17 +1,20 @@
 // Show link source
 // For fully qualified URLs only
 a {
-	&[href^="http://"], &[href^="https://"], &[href^="ftp://"] {
+	&[href^='http://'],
+	&[href^='https://'],
+	&[href^='ftp://'] {
 		&:after {
-			content: " (" attr(href) ")";
+			content: ' (' attr(href) ')';
 			font-size: 80%;
 		}
 	}
 }
 
 // Show abbreviation or acronym title
-abbr[title], acronym[title] {
+abbr[title],
+acronym[title] {
 	&:after {
-		content: " (" attr(title) ")";
+		content: ' (' attr(title) ')';
 	}
 }

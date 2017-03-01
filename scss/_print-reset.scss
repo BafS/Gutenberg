@@ -2,8 +2,8 @@
  * Global
  */
 * {
-	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -31,24 +31,31 @@ html {
 }
 
 body {
-	color: $body-color !important;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 	background: $background-color !important;
-	font-size: 1rem;
+	color: $body-color !important;
 	font-family: $base-font-family;
+	font-size: 1rem;
 	line-height: $line-height;
 	// max-width: 21cm;
 	margin: 0 auto;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
 }
 
-p, blockquote, table, ul, ol, dl {
-	margin-top: 0;
+p,
+blockquote,
+table,
+ul,
+ol,
+dl {
 	margin-bottom: $spacing;
+	margin-top: 0;
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
 	&:last-child {
 		margin-bottom: 0;
 	}
@@ -57,12 +64,17 @@ p, ul, ol {
 /**
  * Headers
  */
-h1, h2, h3, h4, h5, h6 {
-	line-height: 1.2;
-	margin-top: 0;
-	margin-bottom: $spacing/2;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	color: $links-color;
 	font-family: $headers-font-family;
+	line-height: 1.2;
+	margin-bottom: $spacing / 2;
+	margin-top: 0;
 }
 
 h1 {
@@ -93,7 +105,8 @@ h6 {
  * Links
  */
 a {
-	&, &:visited {
+	&,
+	&:visited {
 		color: $links-color;
 		text-decoration: underline;
 		word-wrap: break-word;
@@ -111,32 +124,39 @@ thead {
 	display: table-header-group;
 }
 
-table, th, td {
+table,
+th,
+td {
 	border-bottom: 1px solid $table-color;
 }
 
-td, th {
-	padding: $base-font-size/2 $base-font-size;
+td,
+th {
+	padding: $base-font-size / 2 $base-font-size;
 }
 
 /**
  * Code, Pre
  */
-code, pre, kbd {
+code,
+pre,
+kbd {
+	border: 1px solid $code-color;
 	font-family: $font-family-monospace;
 	font-size: 85%;
-	border: 1px solid $code-color;
 }
 
-code, kbd {
-	padding: 3px 3px;
+code,
+kbd {
+	padding: 3px;
 }
 
 pre {
-	padding: 10px 12px;
 	margin-bottom: $spacing;
+	padding: 10px 12px;
 
-	code, kbd {
+	code,
+	kbd {
 		border: 0;
 	}
 }
@@ -169,8 +189,8 @@ blockquote {
 }
 
 img {
-	display: block;
 	border: 0;
+	display: block;
 	max-width: 100% !important;
 	vertical-align: middle;
 }
@@ -179,8 +199,8 @@ hr {
 	border: 0;
 	border-bottom: 2px solid $hr-color;
 	height: 0;
-	padding: 0;
 	margin: $spacing * 1.5 0;
+	padding: 0;
 }
 
 dt {
@@ -192,7 +212,8 @@ dd {
 	margin-bottom: $spacing / 2;
 }
 
-abbr[title], acronym[title] {
+abbr[title],
+acronym[title] {
 	border: 0;
 	text-decoration: 0;
 }

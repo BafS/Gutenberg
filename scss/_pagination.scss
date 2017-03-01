@@ -1,28 +1,49 @@
-table, blockquote, pre, code, figure, li, hr, ul, ol, a, tr {
+table,
+blockquote,
+pre,
+code,
+figure,
+li,
+hr,
+ul,
+ol,
+a,
+tr {
 	page-break-inside: avoid;
 }
 
 // Orphans and widows
-h2, h3, h4, p, a {
+h2,
+h3,
+h4,
+p,
+a {
 	orphans: 3; // minimum number of lines that must be left at the bottom of a page
 	widows: 3; // minimum number of lines that must be left at the top of a page
 }
 
 // Avoid breaking inside or just after titles
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	page-break-after: avoid;
 	page-break-inside: avoid;
 }
 
 // Avoid breaking before a paragraph if header before
-h1 + p, h2 + p, h3 + p {
+h1 + p,
+h2 + p,
+h3 + p {
 	page-break-before: avoid;
 }
 
 // Avoid to break inside an image
 img {
-	page-break-before: auto;
 	page-break-after: auto;
+	page-break-before: auto;
 	page-break-inside: avoid;
 }
 

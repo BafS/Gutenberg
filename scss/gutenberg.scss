@@ -1,17 +1,18 @@
 /**
- * Gutenberg 0.3
+ * Gutenberg
  *
  * MIT Fabien Sa
+ * https://github.com/BafS/Gutenberg
  */
 
 // Variables
-@import "variables";
+@import 'variables';
 
 // Normalize
-@import "../node_modules/normalize-scss/sass/normalize/_import-now";
+@import '../node_modules/normalize-scss/sass/normalize/_import-now';
 
-@import "print-reset";
-@import "pagination";
-@import "page";
-@import "reformat";
-@import "utilities";
+@import 'print-reset';
+@import 'pagination';
+@import 'page';
+@import 'reformat';
+@import 'utilities';

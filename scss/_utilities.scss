@@ -11,11 +11,12 @@
 }
 
 a.no-reformat:after {
-	content: ""
+	content: '';
 }
 
-abbr[title], acronym[title] {
+abbr[title],
+acronym[title] {
 	&.no-reformat:after {
-		content: ""
+		content: '';
 	}
 }

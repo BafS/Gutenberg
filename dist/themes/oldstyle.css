@@ -1,5 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Crimson+Text:600);
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Crimson Text', serif; }
 
 body {
@@ -12,7 +17,8 @@ h1 {
 pre {
   border: 1px solid #000; }
 
-th, td {
+th,
+td {
   border-bottom: 1px solid #000; }
 
 thead {
@@ -20,8 +26,8 @@ thead {
 
 blockquote {
   border-left: 1px dashed #000;
+  font-variant: small-caps;
   margin-left: 1.5rem;
-  padding-left: 1rem;
-  font-variant: small-caps; }
+  padding-left: 1rem; }
   blockquote p:first-letter {
     font-weight: bold; }

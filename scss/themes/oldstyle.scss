@@ -1,8 +1,13 @@
-@import "../variables.scss";
+@import '../variables.scss';
 
 @import url(https://fonts.googleapis.com/css?family=Crimson+Text:600);
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: 'Crimson Text', serif;
 }
 
@@ -19,7 +24,8 @@ pre {
 	border: 1px solid $table-color;
 }
 
-th, td {
+th,
+td {
 	border-bottom: 1px solid $table-color;
 }
 
@@ -29,11 +35,13 @@ thead {
 
 blockquote {
 	border-left: 1px dashed $table-color;
+	font-variant: small-caps;
 	margin-left: $spacing;
 	padding-left: 1rem;
-	font-variant: small-caps;
 
-	& p:first-letter {
-		font-weight: bold;
+	& {
+		p:first-letter {
+			font-weight: bold;
+		}
 	}
 }

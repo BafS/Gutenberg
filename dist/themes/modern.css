@@ -1,6 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat:700);
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Montserrat', sans-serif; }
 
 body {
@@ -11,20 +16,26 @@ body {
  * Global
  */
 h1 {
-  text-align: center;
   font-weight: 700;
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+  text-align: center; }
 
 h2 {
   letter-spacing: -1px; }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
   color: #262626; }
 
-pre, code {
+pre,
+code {
   border: 0; }
 
-pre, code, blockquote {
+pre,
+code,
+blockquote {
   background: #f8f8f9; }
 
 blockquote {

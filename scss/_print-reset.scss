@@ -1,6 +1,6 @@
-/**
- * Global
- */
+//
+// Global
+//
 * {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -61,9 +61,9 @@ ol {
 	}
 }
 
-/**
- * Headers
- */
+//
+// Headers
+//
 h1,
 h2,
 h3,
@@ -101,9 +101,9 @@ h6 {
 	font-size: $font-size-h6;
 }
 
-/**
- * Links
- */
+//
+// Links
+//
 a {
 	&,
 	&:visited {
@@ -113,9 +113,9 @@ a {
 	}
 }
 
-/**
- * Table
- */
+//
+// Table
+//
 table {
 	border-collapse: collapse;
 }
@@ -135,9 +135,9 @@ th {
 	padding: $base-font-size / 2 $base-font-size;
 }
 
-/**
- * Code, Pre
- */
+//
+// Code, Pre
+//
 code,
 pre,
 kbd {
@@ -161,9 +161,9 @@ pre {
 	}
 }
 
-/**
- * Others
- */
+//
+// Others
+//
 blockquote {
 	border: 0;
 	border-left: 5px solid $blockquote-color;

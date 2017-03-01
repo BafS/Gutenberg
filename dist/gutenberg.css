@@ -1,7 +1,8 @@
-/**
- * Gutenberg 0.3
+/*!
+ * Gutenberg
  *
  * MIT Fabien Sa
+ * https://github.com/BafS/Gutenberg
  */
 /*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
 /* Document
@@ -420,9 +421,6 @@ template {
 [hidden] {
   display: none; }
 
-/**
- * Global
- */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -473,9 +471,6 @@ ul:last-child,
 ol:last-child {
   margin-bottom: 0; }
 
-/**
- * Headers
- */
 h1,
 h2,
 h3,
@@ -506,17 +501,11 @@ h5 {
 h6 {
   font-size: 1rem; }
 
-/**
- * Links
- */
 a, a:visited {
   color: #000;
   text-decoration: underline;
   word-wrap: break-word; }
 
-/**
- * Table
- */
 table {
   border-collapse: collapse; }
 
@@ -532,9 +521,6 @@ td,
 th {
   padding: 8px 16px; }
 
-/**
- * Code, Pre
- */
 code,
 pre,
 kbd {
@@ -553,9 +539,6 @@ pre {
   pre kbd {
     border: 0; }
 
-/**
- * Others
- */
 blockquote {
   border: 0;
   border-left: 5px solid #bbb;

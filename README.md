@@ -12,7 +12,7 @@
 
 # How to use
 
-Simply include the right stylesheet(s) in your html an load it only for a printer.
+Simply include the right stylesheet(s) in your html and load it only for a printer.
 Gutenberg.css is the base stylesheet but there is themes available in the `themes` folder.
 
 Example with Gutenberg and "old style" theme :

@@ -1,5 +1,5 @@
 <p align="center">
-	<img width="450" alt="Gutenberg" src="http://i.imgur.com/NlGJI3v.png">
+	<img width="470" alt="Gutenberg" src="http://i.imgur.com/NlGJI3v.png">
 </p>
 
 > Modern framework to print correctly
@@ -52,7 +52,7 @@ To hide elements to be printed you can simply add the class `no-print`.
 
 ### Force break page
 
-Gutenberg provide to way break page, the class `page-break` will for to break before and `page-break-after` to break after.
+Gutenberg provides two ways to break a page, the class `page-break` will to break before and `page-break-after` to break after.
 
 Example:
 

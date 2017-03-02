@@ -39,8 +39,8 @@ npm install gutenberg-css
 You can also use the unpkg service as a *CDN*.
 
 ```HTML
-<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.3" media="print">
-<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.3/dist/themes/oldstyle.min.css" media="print">
+<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.4" media="print">
+<link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.4/dist/themes/oldstyle.min.css" media="print">
 ```
 
 

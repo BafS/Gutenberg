@@ -637,7 +637,8 @@ abbr[title]:after,
 acronym[title]:after {
   content: " (" attr(title) ")"; }
 
-.page-break {
+.page-break,
+.page-break-before {
   page-break-before: always; }
 
 .page-break-after {

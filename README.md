@@ -58,7 +58,7 @@ Example:
 
 ```HTML
 <!-- The title will be on a new page -->
-<h1 class="page-break">My title</h1>
+<h1 class="page-break-before">My title</h1>
 
 <p class="page-break-after">I will break after this paragraph</p>
 <!-- Break here, the next paragraph will be on a new page -->

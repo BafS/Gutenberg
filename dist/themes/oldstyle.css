@@ -1,11 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Crimson+Text:600);
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: 'Crimson Text', serif; }
+  font-family: 'Crimson Text', Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif; }
 
 body {
   font-family: Georgia, "Times New Roman", Times, serif;

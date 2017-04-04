@@ -1,6 +1,6 @@
 // Base
-$line-height: 1.5;
-$spacing: 1.5rem;
+$line-height: 1.5 !default;
+$spacing: 1.5rem !default;
 
 // Font family
 // Taken from bootstrap
@@ -8,8 +8,8 @@ $font-family-sans-serif: 'Helvetica Neue', Helvetica, Arial, sans-serif !default
 $font-family-serif: Georgia, 'Times New Roman', Times, serif !default;
 $font-family-monospace: Menlo, Monaco, Consolas, 'Courier New', monospace !default;
 
-$base-font-family: $font-family-sans-serif;
-$headers-font-family: $font-family-sans-serif;
+$base-font-family: $font-family-sans-serif !default;
+$headers-font-family: $font-family-sans-serif !default;
 
 // Colors
 // Note: Black prints faster (http://www.sanbeiji.com/archives/953)
@@ -33,7 +33,7 @@ $font-size-h5: 1.25rem !default;
 $font-size-h6: 1rem !default;
 
 // Page
-$page-padding-left: 1.8cm;
-$page-padding-right: 1.8cm;
-$page-padding-top: 2.54cm;
-$page-padding-bottom: 2.54cm;
+$page-padding-left: 1.8cm !default;
+$page-padding-right: 1.8cm !default;
+$page-padding-top: 2.54cm !default;
+$page-padding-bottom: 2.54cm !default;

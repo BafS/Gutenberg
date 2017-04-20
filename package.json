@@ -11,7 +11,8 @@
   "keywords": [
     "framework",
     "css",
-    "print"
+    "print",
+    "eyeglass-module"
   ],
   "author": "Fabien Sa",
   "license": "MIT",
@@ -30,5 +31,11 @@
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0"
+  },
+  "eyeglass": {
+    "name": "gutenberg",
+    "sassDir": "scss",
+    "needs": "*",
+    "exports": false
   }
 }

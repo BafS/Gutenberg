@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/BafS/Gutenberg#readme",
   "dependencies": {
-    "normalize-scss": "~6.0.0"
+    "normalize-scss": "~7.0.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

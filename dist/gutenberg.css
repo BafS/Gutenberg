@@ -8,20 +8,19 @@
 /* Document
        ========================================================================== */
 /**
-     * 1. Change the default font family in all browsers (opinionated).
-     * 2. Correct the line height in all browsers.
-     * 3. Prevent adjustments of font size after orientation changes in
+     * 1. Correct the line height in all browsers.
+     * 2. Prevent adjustments of font size after orientation changes in
      *    IE on Windows Phone and in iOS.
      */
 html {
+  /* Change the default font family in all browsers (opinionated). */
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /* 1 */
   line-height: 1.15;
-  /* 2 */
+  /* 1 */
   -ms-text-size-adjust: 100%;
-  /* 3 */
+  /* 2 */
   -webkit-text-size-adjust: 100%;
-  /* 3 */ }
+  /* 2 */ }
 
 /* Sections
        ========================================================================== */
@@ -105,18 +104,10 @@ a {
   -webkit-text-decoration-skip: objects;
   /* 2 */ }
 
-/**
-     * Remove the outline on focused links when they are also active or hovered
-     * in all browsers (opinionated).
-     */
-a:active,
-a:hover {
-  outline-width: 0; }
-
 /* Text-level semantics
        ========================================================================== */
 /**
-     * 1. Remove the bottom border in Firefox 39-.
+     * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
      * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
      */
 abbr[title] {
@@ -336,12 +327,10 @@ input {
   /* 2 */ }
 
 /**
-     * Change the border, margin, and padding in all browsers (opinionated).
+     * Correct the padding in Firefox.
      */
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0.35em 0.75em 0.625em; }
 
 /**
      * 1. Correct the text wrapping in Edge and IE.

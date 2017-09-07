@@ -528,6 +528,18 @@ pre {
   pre kbd {
     border: 0; }
 
+::-webkit-input-placeholder {
+  color: transparent; }
+
+:-moz-placeholder {
+  color: transparent; }
+
+::-moz-placeholder {
+  color: transparent; }
+
+:-ms-input-placeholder {
+  color: transparent; }
+
 blockquote {
   border: 0;
   border-left: 5px solid #bbb;

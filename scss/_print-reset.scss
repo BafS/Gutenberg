@@ -162,6 +162,27 @@ pre {
 }
 
 //
+// Placeholder
+//
+// see https://stackoverflow.com/a/16493412/1066915
+// WebKit browsers
+::-webkit-input-placeholder {
+	color: transparent;
+}
+// Mozilla Firefox 4 to 18
+:-moz-placeholder {
+	color: transparent;
+}
+// Mozilla Firefox 19+
+::-moz-placeholder {
+	color: transparent;
+}
+// Internet Explorer 10+
+:-ms-input-placeholder {
+	color: transparent;
+}
+
+//
 // Others
 //
 blockquote {

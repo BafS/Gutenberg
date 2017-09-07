@@ -6,7 +6,7 @@
   "browser": "dist/gutenberg.min.css",
   "scripts": {
     "build": "gulp",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "sass-lint"
   },
   "keywords": [
     "framework",

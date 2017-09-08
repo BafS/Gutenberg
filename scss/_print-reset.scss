@@ -133,6 +133,7 @@ td {
 td,
 th {
 	padding: $base-font-size / 2 $base-font-size;
+	page-break-inside: avoid
 }
 
 //

@@ -654,3 +654,8 @@ a.no-reformat:after {
 abbr[title].no-reformat:after,
 acronym[title].no-reformat:after {
   content: ''; }
+
+.no-reformat abbr:after,
+.no-reformat acronym:after,
+.no-reformat a:after {
+  content: ''; }

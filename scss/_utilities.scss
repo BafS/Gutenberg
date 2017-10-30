@@ -25,3 +25,13 @@ acronym {
 		}
 	}
 }
+
+.no-reformat {
+	abbr,
+	acronym,
+	a {
+		&:after {
+			content: '';
+		}
+	}
+}

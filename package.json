@@ -6,6 +6,7 @@
   "browser": "dist/gutenberg.min.css",
   "scripts": {
     "build": "gulp",
+    "watch": "gulp watch",
     "test": "sass-lint"
   },
   "keywords": [

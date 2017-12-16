@@ -2,7 +2,7 @@
 	<img width="470" alt="Gutenberg" src="http://i.imgur.com/NlGJI3v.png">
 </p>
 
-> Modern framework to print correctly
+> Modern framework to print web pages correctly
 
 [![npm (scoped)](https://img.shields.io/npm/v/gutenberg-css.svg?style=flat-square)](https://www.npmjs.com/package/gutenberg-css)
 [![npm](https://img.shields.io/npm/l/gutenberg-css.svg?style=flat-square)]()
@@ -33,6 +33,8 @@ Gutenberg is available on npm
 ```
 npm install gutenberg-css
 ```
+
+(or `yarn add gutenberg-css` for yarn users)
 
 ## CDN
 
@@ -81,5 +83,6 @@ To force backgrounds to be printed (can be useful when you "print" a pdf), add t
 
 ## Dev
 
- 1. `npm install` to install dependencies
- 2. `gulp watch` to "watch" the scss folder and compile to css
+ - `npm install` to install dependencies
+ - `npm run watch` to "watch" the scss folder and compile to css
+ - `npm run build` to compile gutenberg to css

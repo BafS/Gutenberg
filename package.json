@@ -1,6 +1,6 @@
 {
   "name": "gutenberg-css",
-  "version": "0.4.4",
+  "version": "0.4.5",
   "description": "Print your web pages with style",
   "main": "scss/gutenberg.scss",
   "browser": "dist/gutenberg.min.css",
@@ -38,5 +38,8 @@
     "sassDir": "scss",
     "needs": "*",
     "exports": false
+  },
+  "engines": {
+    "node": ">=4.0"
   }
 }

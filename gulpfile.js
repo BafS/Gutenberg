@@ -1,14 +1,14 @@
-var gulp       = require('gulp'),
-    rename     = require('gulp-rename'),
-    sass       = require('gulp-sass');
+const gulp = require('gulp');
+const rename = require('gulp-rename');
+const sass = require('gulp-sass');
 
-gulp.task('build-css', function() {
+gulp.task('build-css', () => {
 	return gulp.src('scss/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(gulp.dest('dist'));
 });
 
-gulp.task('minify-css', function() {
+gulp.task('minify-css', () => {
 	return gulp.src('scss/**/*.scss')
 		.pipe(sass({
 			outputStyle: 'compressed'
@@ -19,7 +19,7 @@ gulp.task('minify-css', function() {
 		.pipe(gulp.dest('dist'));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', () => {
 	gulp.watch('scss/**/*.scss', ['build-css']);
 });
 

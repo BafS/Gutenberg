@@ -192,6 +192,13 @@ blockquote {
 	margin-left: 1px;
 	padding: 12px $spacing;
 
+	[dir='rtl'] & {
+		border-left: 0;
+		border-right: 5px solid $blockquote-color;
+		margin-left: 0;
+		margin-right: 1px;
+	}
+
 	&:first-child {
 		margin-top: 0;
 	}

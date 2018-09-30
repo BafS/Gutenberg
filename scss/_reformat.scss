@@ -1,12 +1,20 @@
 // Show link source
 // For fully qualified URLs only
 a {
-	&[href^='http://'],
-	&[href^='https://'],
-	&[href^='ftp://'] {
+	&[href^='http'],
+	&[href^='ftp'] {
 		&:after {
 			content: ' (' attr(href) ')';
 			font-size: 80%;
+		}
+	}
+
+	&[href$='.jpg'],
+	&[href$='.jpeg'],
+	&[href$='.gif'],
+	&[href$='.png'] {
+		&:after {
+			display: none;
 		}
 	}
 }

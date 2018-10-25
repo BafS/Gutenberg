@@ -508,7 +508,8 @@ td {
 
 td,
 th {
-  padding: 8px 16px; }
+  padding: 8px 16px;
+  page-break-inside: avoid; }
 
 code,
 pre,
@@ -545,6 +546,11 @@ blockquote {
   border-left: 5px solid #bbb;
   margin-left: 1px;
   padding: 12px 1.5rem; }
+  [dir='rtl'] blockquote {
+    border-left: 0;
+    border-right: 5px solid #bbb;
+    margin-left: 0;
+    margin-right: 1px; }
   blockquote:first-child {
     margin-top: 0; }
   blockquote p:last-child,
@@ -630,9 +636,12 @@ body {
   padding-right: 1.8cm;
   padding-top: 2.54cm; }
 
-a[href^='http://']:after, a[href^='https://']:after, a[href^='ftp://']:after {
+a[href^='http']:after, a[href^='ftp']:after {
   content: " (" attr(href) ")";
   font-size: 80%; }
+
+a[href$='.jpg']:after, a[href$='.jpeg']:after, a[href$='.gif']:after, a[href$='.png']:after {
+  display: none; }
 
 abbr[title]:after,
 acronym[title]:after {

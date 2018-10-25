@@ -2,20 +2,12 @@
 <html>
 <head>
 	<title>Gutenberg demo</title>
-	<style>
-body {
-	font-family: sans-serif;
-	padding: 1.2em 3em;
-	color: #333;
-}
-a { color: #28d }
-li { margin: 4px 0 }
-code { background: #f8f8f8 }
-	</style>
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/mu/0.3.0/mu.min.css" />
+<link rel="stylesheet" href="//unpkg.com/gutenberg-css" media="print" charset="utf-8">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
 </head>
 <body>
-	<h1>Gutenberg</h1>
+	<h1>Gutenberg Framework</h1>
 
 	<h2>Demonstration</h2>
 	<ul>
@@ -37,14 +29,12 @@ code { background: #f8f8f8 }
 
 	Example:
 
-	<pre><code class="html">
-&lt;!-- The title will be on a new page --&gt;
+	<pre><code class="html">&lt;!-- The title will be on a new page --&gt;
 &lt;h1 class="page-break-before"&gt;My title&lt;/h1&gt;
 
 &lt;p class="page-break-after"&gt;I will break after this paragraph&lt;/p&gt;
 &lt;!-- Break here, the next paragraph will be on a new page --&gt;
-&lt;p&gt;I am on a new page&lt;/p&gt;
-	</code></pre>
+&lt;p&gt;I am on a new page&lt;/p&gt;</code></pre>
 
 	<h4>Not reformat links or acronym</h4>
 
@@ -55,12 +45,10 @@ code { background: #f8f8f8 }
 
 	To force backgrounds to be printed (can be useful when you "print" a pdf), add this CSS (compatible with Safari and Chrome) :
 
-	<pre><code class="css">
--webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-	</code></pre>
+	<pre><code class="css">-webkit-print-color-adjust: exact;
+        print-color-adjust: exact;</code></pre>
 
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

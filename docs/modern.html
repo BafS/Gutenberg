@@ -4,10 +4,29 @@
 		<meta charset="utf-8">
 		<title>Gutenberg</title>
 
-		<link rel="stylesheet" href="https://unpkg.com/gutenberg-css" media="print" charset="utf-8">
-		<link rel="stylesheet" href="https://unpkg.com/gutenberg-css/dist/themes/modern.min.css" media="print" charset="utf-8">
+		<link rel="stylesheet" href="//unpkg.com/gutenberg-css" media="print" charset="utf-8">
+		<link rel="stylesheet" href="//unpkg.com/gutenberg-css/dist/themes/oldstyle.min.css" media="print" charset="utf-8">
+		<style>
+			.demo {
+				float: right;
+				color: #fff;
+				border-radius: 4px;
+				padding: 18px 36px;
+				text-transform: uppercase;
+				text-align: center;
+				font-size: 12pt;
+				font-weight: bold;
+				cursor: pointer;
+				margin-right: 15px;
+				background: #16a;
+			}
+			.demo:hover {
+				box-shadow: 0 0 12px rgba(0, 0, 0, .4);
+			}
+		</style>
 	</head>
 	<body>
+		<button class="demo no-print" onClick="window.print()">print me !</button>
 
 		<h1>Quis enim potest ea, non probare?</h1>
 

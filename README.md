@@ -5,10 +5,10 @@
 > Modern framework to print web pages correctly
 
 [![npm (scoped)](https://img.shields.io/npm/v/gutenberg-css.svg?style=flat-square)](https://www.npmjs.com/package/gutenberg-css)
-[![npm](https://img.shields.io/npm/l/gutenberg-css.svg?style=flat-square)]()
-[![npm](https://img.shields.io/npm/dm/gutenberg-css.svg?style=flat-square)]()
+[![Build Status](https://travis-ci.org/BafS/Gutenberg.svg?branch=master)](https://travis-ci.org/BafS/Gutenberg)
 [![Maintainability](https://api.codeclimate.com/v1/badges/cd58cc2133d461631f7f/maintainability)](https://codeclimate.com/github/BafS/Gutenberg/maintainability)
-[![Beerpay](https://beerpay.io/BafS/Gutenberg/badge.svg)](https://beerpay.io/BafS/Gutenberg)
+[![license](https://img.shields.io/npm/l/gutenberg-css.svg?style=flat-square)]()
+[![download](https://img.shields.io/npm/dm/gutenberg-css.svg?style=flat-square)]()
 
 # How to use
 

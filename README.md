@@ -83,6 +83,6 @@ To force backgrounds to be printed (can be useful when you "print" a pdf), add t
 
 ## Dev
 
- - `npm install` to install dependencies
+ - `npm i` to install the dependencies
  - `npm run watch` to "watch" the scss folder and compile to css
  - `npm run build` to compile gutenberg to css

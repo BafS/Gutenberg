@@ -1,26 +1,24 @@
-const gulp = require('gulp');
+const { watch, series, src, dest } = require('gulp');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 
-gulp.task('build-css', () => {
-  return gulp.src('scss/**/*.scss')
+const buildCss = () => {
+  return src('scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('dist'));
-});
+    .pipe(dest('dist'));
+};
 
-gulp.task('minify-css', () => {
-  return gulp.src('scss/**/*.scss')
+const minifyCss = () => {
+  return src('scss/**/*.scss')
     .pipe(sass({
       outputStyle: 'compressed'
     }).on('error', sass.logError))
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('dist'));
-});
+    .pipe(dest('dist'));
+};
 
-gulp.task('watch', () => {
-  gulp.watch('scss/**/*.scss', ['build-css']);
-});
+exports.watch = () => watch('scss/**/*.scss', buildCss);
 
-gulp.task('default', ['build-css', 'minify-css']);
+exports.default = series(buildCss, minifyCss);

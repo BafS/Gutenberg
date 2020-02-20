@@ -1,17 +1,21 @@
 const { watch, series, src, dest } = require('gulp');
 const rename = require('gulp-rename');
 const sass = require('gulp-sass');
+const tildeImporter = require('node-sass-tilde-importer');
 
 const buildCss = () => {
   return src('scss/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass({
+      importer: tildeImporter,
+    }).on('error', sass.logError))
     .pipe(dest('dist'));
 };
 
 const minifyCss = () => {
   return src('scss/**/*.scss')
     .pipe(sass({
-      outputStyle: 'compressed'
+      importer: tildeImporter,
+      outputStyle: 'compressed',
     }).on('error', sass.logError))
     .pipe(rename({
       suffix: '.min'

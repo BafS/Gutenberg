@@ -31,7 +31,8 @@
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "node-sass-tilde-importer": "^1.0.2"
   },
   "eyeglass": {
     "name": "gutenberg",

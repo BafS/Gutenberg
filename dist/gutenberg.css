@@ -547,11 +547,16 @@ acronym[title]:after {
   content: " (" attr(title) ")"; }
 
 .page-break,
+.break-before,
 .page-break-before {
   page-break-before: always; }
 
+.break-after,
 .page-break-after {
   page-break-after: always; }
+
+.avoid-break-inside {
+  page-break-inside: avoid; }
 
 .no-print {
   display: none; }

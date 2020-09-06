@@ -4,7 +4,7 @@
 	<title>Gutenberg demo</title>
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/mu/0.3.0/mu.min.css" />
 <link rel="stylesheet" href="//unpkg.com/gutenberg-css" media="print" charset="utf-8">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/default.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/default.min.css">
 </head>
 <body>
 	<h1>Gutenberg Framework</h1>
@@ -30,11 +30,15 @@
 	Example:
 
 	<pre><code class="html">&lt;!-- The title will be on a new page --&gt;
-&lt;h1 class="page-break-before"&gt;My title&lt;/h1&gt;
+&lt;h1 class="break-before"&gt;My title&lt;/h1&gt;
 
-&lt;p class="page-break-after"&gt;I will break after this paragraph&lt;/p&gt;
+&lt;p class="break-after"&gt;I will break after this paragraph&lt;/p&gt;
 &lt;!-- Break here, the next paragraph will be on a new page --&gt;
 &lt;p&gt;I am on a new page&lt;/p&gt;</code></pre>
+
+	<h4>Avoid break inside</h4>
+
+	To avoid the page to break "inside" an element, you can use the <code>avoid-break-inside</code> class.
 
 	<h4>Not reformat links or acronym</h4>
 
@@ -48,7 +52,7 @@
 	<pre><code class="css">-webkit-print-color-adjust: exact;
         print-color-adjust: exact;</code></pre>
 
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/highlight.min.js"></script>
 	<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

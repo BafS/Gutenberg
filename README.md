@@ -17,7 +17,7 @@ Gutenberg.css is the base stylesheet but there are themes available in the `them
 
 Example with Gutenberg and "old style" theme :
 
-```HTML
+```html
 <link rel="stylesheet" href="dist/gutenberg.css" media="print">
 <link rel="stylesheet" href="dist/themes/oldstyle.css" media="print"> <!-- optional -->
 ```
@@ -40,7 +40,7 @@ npm install gutenberg-css
 
 You can also use the unpkg service as a *CDN*.
 
-```HTML
+```html
 <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.6" media="print">
 <link rel="stylesheet" href="https://unpkg.com/gutenberg-css@0.6/dist/themes/oldstyle.min.css" media="print">
 ```
@@ -54,29 +54,42 @@ To hide elements to be printed you can simply add the class `no-print`.
 
 ### Force break page
 
-Gutenberg provides two ways to break a page, the class `page-break-before` will to break before and `page-break-after` to break after.
+Gutenberg provides two ways to break a page, the class `break-before` will to break before and `break-after` to break after.
 
 Example:
 
-```HTML
+```html
 <!-- The title will be on a new page -->
-<h1 class="page-break-before">My title</h1>
+<h1 class="break-before">My title</h1>
 
-<p class="page-break-after">I will break after this paragraph</p>
+<p class="break-after">I will break after this paragraph</p>
 <!-- Break here, the next paragraph will be on a new page -->
 <p>I am on a new page</p>
 ```
 
+### Avoid break inside
+
+To avoid the page to break "inside" an element, you can use the `avoid-break-inside` class.
+
+Example:
+
+```html
+<div class="avoid-break-inside">
+  <img src="gutenberg.png" />
+
+  <p>I really don't want this part to be cut</p>
+</div>
+```
+
 ### Not reformat links or acronym
 
-If you do not want to reformat the links, acronym or abbreviation to show the full url or title, you
-can use the class `no-reformat`.
+If you do not want to reformat the links, acronym or abbreviation to show the full url or title, you can use the class `no-reformat`.
 
 ### Force to print background
 
-To force backgrounds to be printed (can be useful when you "print" a pdf), add this CSS (compatible with Safari and Chrome) :
+To force backgrounds to be printed (can be useful when you "print" a pdf), add this CSS (compatible with Safari and Chrome):
 
-```CSS
+```css
 -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
 ```

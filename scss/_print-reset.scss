@@ -73,7 +73,7 @@ h6 {
 	color: $links-color;
 	font-family: $headers-font-family;
 	line-height: 1.2;
-	margin-bottom: $spacing / 2;
+	margin-bottom: $spacing * 0.5;
 	margin-top: 0;
 }
 
@@ -132,7 +132,7 @@ td {
 
 td,
 th {
-	padding: $base-font-size / 2 $base-font-size;
+	padding: $base-font-size * 0.5 $base-font-size;
 	page-break-inside: avoid
 }
 
@@ -238,7 +238,7 @@ dt {
 
 dd {
 	margin: 0;
-	margin-bottom: $spacing / 2;
+	margin-bottom: $spacing * 0.5;
 }
 
 abbr,

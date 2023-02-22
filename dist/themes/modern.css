@@ -4,35 +4,43 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', 'Arial Black', 'Arial Bold', 'Helvetica Neue', Helvetica, sans-serif; }
+  font-family: "Montserrat", "Arial Black", "Arial Bold", "Helvetica Neue", Helvetica, sans-serif;
+}
 
 body {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, arial, sans-serif;
-  text-align: justify; }
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, arial, sans-serif;
+  text-align: justify;
+}
 
 h1 {
   font-weight: 700;
   letter-spacing: -1px;
-  text-align: center; }
+  text-align: center;
+}
 
 h2 {
-  letter-spacing: -1px; }
+  letter-spacing: -1px;
+}
 
 h2,
 h3,
 h4,
 h5 {
-  color: #262626; }
+  color: #262626;
+}
 
 pre,
 code {
-  border: 0; }
+  border: 0;
+}
 
 pre,
 code,
 blockquote {
-  background: #f8f8f9; }
+  background: #f8f8f9;
+}
 
 blockquote {
   margin-left: 1.5rem;
-  margin-right: 1.5rem; }
+  margin-right: 1.5rem;
+}

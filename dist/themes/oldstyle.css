@@ -4,29 +4,37 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Crimson Text', Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif; }
+  font-family: "Crimson Text", Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
 
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
-  text-align: justify; }
+  text-align: justify;
+}
 
 h1 {
-  text-align: center; }
+  text-align: center;
+}
 
 pre {
-  border: 1px solid #000; }
+  border: 1px solid #000;
+}
 
 th,
 td {
-  border-bottom: 1px solid #000; }
+  border-bottom: 1px solid #000;
+}
 
 thead {
-  border-bottom: 3px double #000; }
+  border-bottom: 3px double #000;
+}
 
 blockquote {
   border-left: 1px dashed #000;
   font-variant: small-caps;
   margin-left: 1.5rem;
-  padding-left: 1rem; }
-  blockquote p:first-letter {
-    font-weight: bold; }
+  padding-left: 1rem;
+}
+blockquote p:first-letter {
+  font-weight: bold;
+}

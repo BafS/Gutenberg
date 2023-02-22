@@ -1,6 +1,6 @@
 {
   "name": "gutenberg-css",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "description": "Print your web pages with style",
   "main": "scss/gutenberg.scss",
   "browser": "dist/gutenberg.min.css",
@@ -31,8 +31,9 @@
   "devDependencies": {
     "gulp": "^4.0.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.1.0",
-    "node-sass-tilde-importer": "^1.0.2"
+    "gulp-sass": "^5.1.0",
+    "node-sass-tilde-importer": "^1.0.2",
+    "sass": "^1.58.3"
   },
   "eyeglass": {
     "name": "gutenberg",
@@ -41,6 +42,6 @@
     "exports": false
   },
   "engines": {
-    "node": ">=4.0"
+    "node": ">=8.0"
   }
 }

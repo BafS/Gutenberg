@@ -2,7 +2,7 @@
 	<img width="470" alt="Gutenberg" src="http://i.imgur.com/NlGJI3v.png">
 </p>
 
-> Modern framework to print web pages correctly
+> Modern framework to print web pages correctly.
 
 [![npm (scoped)](https://img.shields.io/npm/v/gutenberg-css.svg?style=flat-square)](https://www.npmjs.com/package/gutenberg-css)
 [![Build Status](https://travis-ci.org/BafS/Gutenberg.svg?branch=master)](https://travis-ci.org/BafS/Gutenberg)
